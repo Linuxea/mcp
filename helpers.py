@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 
 client = OpenAI(
-    api_key='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', base_url="https://api.perplexity.ai/"
+    api_key=os.getenv('PPLX_APIKEY'), base_url="https://api.perplexity.ai/"
 )
 
 
